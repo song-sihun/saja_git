@@ -1,5 +1,7 @@
 package org.example.iocexam.cookOrder.cook;
+import org.springframework.stereotype.Component;
 
+@Component
 public class JapaneseCook implements Cook{
     @Override
     public void cook() {

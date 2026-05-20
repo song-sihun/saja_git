@@ -1,13 +1,21 @@
 package org.example.iocexam;
 
+import org.example.iocexam.logger.CalculatorService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
 public class IocExamApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(org.example.iocexam.IocExamApplication.class, args);
+//        SpringApplication.run(org.example.iocexam.IocExamApplication.class, args);
+        ApplicationContext context = SpringApplication.run(org.example.iocexam.IocExamApplication.class, args);
+
+        CalculatorService calculatorService = context.getBean(CalculatorService.class);
+        calculatorService.divide(10, 0);
+
+
     }
 
 }

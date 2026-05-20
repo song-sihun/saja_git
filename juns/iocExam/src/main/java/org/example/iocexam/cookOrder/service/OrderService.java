@@ -1,20 +1,21 @@
 package org.example.iocexam.cookOrder.service;
 
 import org.example.iocexam.cookOrder.cook.Cook;
-import org.example.iocexam.cookOrder.cook.OrderLogger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 
+@Service
 public class OrderService implements CookService{
+    Logger logger = LoggerFactory.getLogger(OrderService.class);
 
-    private final OrderLogger orderLogger;
 
-    public OrderService(OrderLogger orderLogger) {
-        this.orderLogger = orderLogger;
+    public OrderService() {
+        logger.info("주문이 접수되었습니다.");
     }
 
     @Override
     public void order(Cook cook) {
-        orderLogger.start();
         cook.cook();
-        orderLogger.end();
     }
 }

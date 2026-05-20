@@ -1,0 +1,63 @@
+2026-05-20 14:06:32.527 [restartedMain] INFO  o.e.iocexam.cookOrder.main.CookMain - Starting CookMain using Java 21.0.10 with PID 32928 (F:\14_java_study\saja_git\juns\iocExam\out\production\classes started by wnstj in F:\14_java_study\saja_git\juns\iocExam)
+2026-05-20 14:06:32.527 [restartedMain] INFO  o.e.iocexam.cookOrder.main.CookMain - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 14:06:32.681 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-20 14:06:32.682 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-20 14:06:32.682 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-20 14:06:32.682 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-20 14:06:32.701 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 170 ms
+2026-05-20 14:06:32.712 [restartedMain] INFO  o.e.i.cookOrder.service.OrderService - 주문이 접수되었습니다.
+2026-05-20 14:06:32.758 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-20 14:06:32.761 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-20 14:06:32.765 [restartedMain] INFO  o.e.iocexam.cookOrder.main.CookMain - Started CookMain in 0.275 seconds (process running for 84.941)
+2026-05-20 14:06:32.766 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-05-20 14:08:26.898 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-20 14:08:26.902 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-20 14:09:06.204 [restartedMain] INFO  o.e.iocexam.cookOrder.main.CookMain - Starting CookMain using Java 21.0.10 with PID 22872 (F:\14_java_study\saja_git\juns\iocExam\out\production\classes started by wnstj in F:\14_java_study\saja_git\juns\iocExam)
+2026-05-20 14:09:06.207 [restartedMain] INFO  o.e.iocexam.cookOrder.main.CookMain - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 14:09:06.248 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-20 14:09:06.248 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-20 14:09:06.822 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-20 14:09:06.831 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-20 14:09:06.832 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-20 14:09:06.833 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-20 14:09:06.865 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 617 ms
+2026-05-20 14:09:06.916 [restartedMain] INFO  o.e.i.cookOrder.service.OrderService - 주문이 접수되었습니다.
+2026-05-20 14:09:07.138 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-20 14:09:07.151 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-20 14:09:07.156 [restartedMain] INFO  o.e.iocexam.cookOrder.main.CookMain - Started CookMain in 1.436 seconds (process running for 2.027)
+2026-05-20 14:09:19.073 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-20 14:09:19.078 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-20 14:23:47.158 [restartedMain] INFO  o.example.iocexam.IocExamApplication - Starting IocExamApplication using Java 21.0.10 with PID 1684 (F:\14_java_study\saja_git\juns\iocExam\out\production\classes started by wnstj in F:\14_java_study\saja_git\juns\iocExam)
+2026-05-20 14:23:47.161 [restartedMain] INFO  o.example.iocexam.IocExamApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 14:23:47.202 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-20 14:23:47.202 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-20 14:23:47.886 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-20 14:23:47.895 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-20 14:23:47.896 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-20 14:23:47.896 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-20 14:23:47.928 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 725 ms
+2026-05-20 14:23:47.975 [restartedMain] INFO  o.e.i.cookOrder.service.OrderService - 주문이 접수되었습니다.
+2026-05-20 14:23:48.190 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-20 14:23:48.204 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-20 14:23:48.208 [restartedMain] INFO  o.example.iocexam.IocExamApplication - Started IocExamApplication in 1.559 seconds (process running for 2.206)
+2026-05-20 14:23:48.210 [restartedMain] ERROR o.e.iocexam.logger.CalculatorService - Cannot divide by zero
+2026-05-20 14:24:15.117 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-05-20 14:24:15.121 [Thread-1] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-20 14:24:15.122 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-05-20 14:24:15.126 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-20 14:24:15.127 [Thread-1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-05-20 14:24:15.230 [restartedMain] INFO  o.example.iocexam.IocExamApplication - Starting IocExamApplication using Java 21.0.10 with PID 1684 (F:\14_java_study\saja_git\juns\iocExam\out\production\classes started by wnstj in F:\14_java_study\saja_git\juns\iocExam)
+2026-05-20 14:24:15.231 [restartedMain] INFO  o.example.iocexam.IocExamApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-20 14:24:15.394 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-20 14:24:15.395 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-20 14:24:15.395 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-20 14:24:15.395 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-20 14:24:15.410 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 177 ms
+2026-05-20 14:24:15.420 [restartedMain] INFO  o.e.i.cookOrder.service.OrderService - 주문이 접수되었습니다.
+2026-05-20 14:24:15.489 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-20 14:24:15.492 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-20 14:24:15.494 [restartedMain] INFO  o.example.iocexam.IocExamApplication - Started IocExamApplication in 0.307 seconds (process running for 29.491)
+2026-05-20 14:24:15.495 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-05-20 14:24:15.495 [restartedMain] ERROR o.e.iocexam.logger.CalculatorService - Cannot divide by zero
+2026-05-20 15:31:24.118 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-20 15:31:24.122 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
