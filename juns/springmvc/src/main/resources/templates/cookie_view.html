@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>쿠키보기</title>
+</head>
+<body>
+<h1>쿠키목록</h1>
+
+<ul>
+    <li th:each="cookie : ${cookieList}">
+        <span th:text="${cookie.key}">쿠키이름</span> +
+        <span th:text="${cookie.value}">쿠키값</span>
+    </li>
+</ul>
+</body>
+</html>

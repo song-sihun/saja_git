@@ -15,10 +15,14 @@
     </thead>
     <tbody>
         <tr th:each="user : ${users}">
-            <td th:text="${user.name}"></td>
-            <td th:text="${user.email}"></td>
+            <td th:text="${user.key}"></td>
+            <td th:text="${user.value}"></td>
         </tr>
     </tbody>
+
+    <form action="/logout" method="post">
+        <input type="submit" value="Logout">
+    </form>
 </table>
 
 </body>
