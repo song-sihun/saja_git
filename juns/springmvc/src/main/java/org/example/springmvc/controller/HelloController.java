@@ -58,8 +58,8 @@ public class HelloController {
     }
 
     @GetMapping("/greeting")
-    public String greeting(@RequestParam(defaultValue = "Guest") String name, Model model){
-        String greeting = helloService.sayHello(name);
+    public String greeting(@RequestParam(defaultValue = "손") String name, Model model){
+        String greeting = "안녕하세요 " + name + "님";
         model.addAttribute("greeting", greeting);
         return "greeting";
     }

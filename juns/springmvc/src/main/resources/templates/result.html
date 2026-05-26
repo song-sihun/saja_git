@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+<h1>Result page</h1>
+<p>
+    전달 받은 ID : <span th:text="${id}"></span>
+</p>
+<p th:if="${message}">
+    전달받은 메시지 : <span th:text="${message}"></span>
+</p>
+
+</body>
+</html>

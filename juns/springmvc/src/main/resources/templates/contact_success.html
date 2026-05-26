@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Result page</h1>
+<p>
+    전달 받은 username : <span th:text="${username}"></span>
+</p>
+<p>
+    전달 받은 email : <span th:text="${email}"></span>
+</p>
+<p th:if="${message}">
+    전달받은 메시지 : <span th:text="${message}"></span>
+</p>
+<p>
+    전달 받은 response message : <span th:text="${responseMessage}"></span>
+</p>
+
+
+</body>
+</html>

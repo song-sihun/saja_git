@@ -6,8 +6,10 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.resource.HttpResource;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -65,5 +67,31 @@ public class CookieController {
 
         model.addAttribute("cookieList", cookieMap);
         return "cookie_view";
+    }
+
+    @GetMapping("/counter")
+    public String counter(@CookieValue(name = "visitCount", required = false) String visitCount, HttpServletResponse response, Model model){
+        log.info("visitCount={}", visitCount);
+
+        int count;
+
+        if (visitCount==null){
+            count = 1;
+        } else {
+            try{
+                count = Integer.parseInt(visitCount) + 1;
+            } catch (NumberFormatException e){
+                count = 1;
+            }
+        }
+
+        Cookie counter =  new Cookie("visitCount", String.valueOf(count));
+        counter.setPath("/");
+        counter.setMaxAge(60*60*24);
+        response.addCookie(counter);
+        model.addAttribute("visitCount", count);
+
+        return "counter";
+
     }
 }
