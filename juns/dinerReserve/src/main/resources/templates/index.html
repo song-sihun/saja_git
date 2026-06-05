@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+
+<div th:if="${session.loginUser == null}">
+    <a th:href="@{/users/join}">회원가입</a>
+    <a th:href="@{/users/login}">로그인</a>
+</div>
+<div th:if="${session.loginUser}">
+    <form th:action="@{/users/logout}" method="POST">
+        <button type="submit" style="background:none; border:none; padding:0; cursor:pointer; color:blue;">로그아웃</button>
+    </form>
+    <div th:if="${session.loginUser.role.name() == 'ADMIN'}">
+        <a th:href="@{/admin/restaurants/register}">식당등록</a>
+        <a th:href="@{/reservation/all}">예약 전체 조회</a>
+
+    </div>
+    <a th:href="@{/restaurants/all}">모든 식당 목록</a>
+    <a th:href="@{/reservation/my}">내 예약 목록</a>
+</div>
+
+</body>
+</html>

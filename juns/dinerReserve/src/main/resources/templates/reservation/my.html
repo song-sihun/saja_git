@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>내 예약 목록</title>
+</head>
+<body>
+
+<h1>내 예약 목록</h1>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>식당명</th>
+        <th>주소</th>
+        <th>예약 날짜</th>
+        <th>예약 시간</th>
+        <th>인원</th>
+        <th>상태</th>
+        <th>요청사항</th>
+        <th>취소</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr th:if="${#lists.isEmpty(reservations)}">
+        <td colspan="8">예약 내역이 없습니다.</td>
+    </tr>
+
+    <tr th:each="reservation : ${reservations}">
+        <td th:text="${reservation.restaurantName}">식당명</td>
+        <td th:text="${reservation.restaurantAddress}">주소</td>
+        <td th:text="${reservation.reservationDate}">2026-06-01</td>
+        <td th:text="${reservation.slotTime}">2026-06-01</td>
+        <td th:text="${reservation.partySize}">2</td>
+        <td th:text="${reservation.status}">RESERVED</td>
+        <td th:text="${reservation.requestMessage}">요청사항</td>
+        <td>
+            <form th:if="${reservation.status.name() == 'RESERVED'}"
+                  th:action="@{/reservation/cancel/{reservationId}(reservationId=${reservation.reservationId})}"
+                  method="post">
+                <button type="submit">취소</button>
+            </form>
+            <span th:if="${reservation.status.name() == 'CANCELLED'}">
+                취소됨
+            </span>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+
+<div th:if="${page.totalPages > 1}">
+    <ul class="pagination">
+         <li th:each="i : ${#numbers.sequence(0, page.totalPages - 1)}">
+             <a th:href="@{/reservation/my(page=${i})}" th:text="${i + 1}" th:classappend="${i == page.number} ? 'active'">1</a>
+         </li>
+     </ul>
+</div>
+<p>
+    <a href="/">홈으로</a>
+</p>
+
+</body>
+</html>

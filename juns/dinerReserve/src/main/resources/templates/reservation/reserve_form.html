@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>예약하기</title>
+</head>
+<body>
+
+<h1>예약하기</h1>
+
+<h2 th:text="${restaurant.name}">식당명</h2>
+<p th:text="${restaurant.address}">주소</p>
+
+<form th:action="@{/reservation/reserve/{restaurantId}(restaurantId=${restaurant.id})}"
+      th:object="${reservationRequest}"
+      method="post">
+
+    <div>
+        <label>예약 날짜</label>
+        <input type="date"
+               th:field="*{reservationDate}" required
+               th:attr="min=${#temporals.format(#temporals.createNow(), 'yyyy-MM-dd')}">
+        <div th:if="${#fields.hasErrors('reservationDate')}"
+             th:errors="*{reservationDate}"></div>
+    </div>
+
+    <div>
+        <label>예약 시간</label>
+        <select th:field="*{slotId}">
+            <option value="">시간 선택</option>
+            <option th:each="slot : ${slots}"
+                    th:value="${slot.id}"
+                    th:text="${slot.slotTime}">
+                18:00
+            </option>
+        </select>
+        <div th:if="${#fields.hasErrors('slotId')}"
+             th:errors="*{slotId}"></div>
+    </div>
+
+    <div>
+        <label>인원 수</label>
+        <input type="number" th:field="*{partySize}" min="1">
+        <div th:if="${#fields.hasErrors('partySize')}"
+             th:errors="*{partySize}"></div>
+    </div>
+
+    <div>
+        <label>요청사항</label>
+        <textarea th:field="*{requestMessage}"></textarea>
+    </div>
+
+    <button type="submit">예약하기</button>
+</form>
+
+<p>
+    <a th:href="@{/restaurants/all}">돌아가기</a>
+</p>
+
+</body>
+</html>

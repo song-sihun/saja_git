@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: demospringjdbc
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jdbcDB
+    username: jdbcUser
+    password: jdbcUser1234
+#logging:
+#  level:
+#    org.springframework.jdbc: DEBUG

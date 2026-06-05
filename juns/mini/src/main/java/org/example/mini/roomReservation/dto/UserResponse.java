@@ -21,6 +21,7 @@ public record UserResponse(
                 user.getStatus(),
                 user.getRole()
         );
+
     }
 
 }

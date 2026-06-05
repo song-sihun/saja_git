@@ -1,63 +1,278 @@
-2026-05-20 14:06:32.527 [restartedMain] INFO  o.e.iocexam.cookOrder.main.CookMain - Starting CookMain using Java 21.0.10 with PID 32928 (F:\14_java_study\saja_git\juns\iocExam\out\production\classes started by wnstj in F:\14_java_study\saja_git\juns\iocExam)
-2026-05-20 14:06:32.527 [restartedMain] INFO  o.e.iocexam.cookOrder.main.CookMain - No active profile set, falling back to 1 default profile: "default"
-2026-05-20 14:06:32.681 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-05-20 14:06:32.682 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-20 14:06:32.682 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-20 14:06:32.682 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-05-20 14:06:32.701 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 170 ms
-2026-05-20 14:06:32.712 [restartedMain] INFO  o.e.i.cookOrder.service.OrderService - 주문이 접수되었습니다.
-2026-05-20 14:06:32.758 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-20 14:06:32.761 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-05-20 14:06:32.765 [restartedMain] INFO  o.e.iocexam.cookOrder.main.CookMain - Started CookMain in 0.275 seconds (process running for 84.941)
-2026-05-20 14:06:32.766 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2026-05-20 14:08:26.898 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2026-05-20 14:08:26.902 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
-2026-05-20 14:09:06.204 [restartedMain] INFO  o.e.iocexam.cookOrder.main.CookMain - Starting CookMain using Java 21.0.10 with PID 22872 (F:\14_java_study\saja_git\juns\iocExam\out\production\classes started by wnstj in F:\14_java_study\saja_git\juns\iocExam)
-2026-05-20 14:09:06.207 [restartedMain] INFO  o.e.iocexam.cookOrder.main.CookMain - No active profile set, falling back to 1 default profile: "default"
-2026-05-20 14:09:06.248 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-05-20 14:09:06.248 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-05-20 14:09:06.822 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-05-20 14:09:06.831 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-20 14:09:06.832 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-20 14:09:06.833 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-05-20 14:09:06.865 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 617 ms
-2026-05-20 14:09:06.916 [restartedMain] INFO  o.e.i.cookOrder.service.OrderService - 주문이 접수되었습니다.
-2026-05-20 14:09:07.138 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-20 14:09:07.151 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-05-20 14:09:07.156 [restartedMain] INFO  o.e.iocexam.cookOrder.main.CookMain - Started CookMain in 1.436 seconds (process running for 2.027)
-2026-05-20 14:09:19.073 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2026-05-20 14:09:19.078 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
-2026-05-20 14:23:47.158 [restartedMain] INFO  o.example.iocexam.IocExamApplication - Starting IocExamApplication using Java 21.0.10 with PID 1684 (F:\14_java_study\saja_git\juns\iocExam\out\production\classes started by wnstj in F:\14_java_study\saja_git\juns\iocExam)
-2026-05-20 14:23:47.161 [restartedMain] INFO  o.example.iocexam.IocExamApplication - No active profile set, falling back to 1 default profile: "default"
-2026-05-20 14:23:47.202 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-05-20 14:23:47.202 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-05-20 14:23:47.886 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-05-20 14:23:47.895 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-20 14:23:47.896 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-20 14:23:47.896 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-05-20 14:23:47.928 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 725 ms
-2026-05-20 14:23:47.975 [restartedMain] INFO  o.e.i.cookOrder.service.OrderService - 주문이 접수되었습니다.
-2026-05-20 14:23:48.190 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-20 14:23:48.204 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-05-20 14:23:48.208 [restartedMain] INFO  o.example.iocexam.IocExamApplication - Started IocExamApplication in 1.559 seconds (process running for 2.206)
-2026-05-20 14:23:48.210 [restartedMain] ERROR o.e.iocexam.logger.CalculatorService - Cannot divide by zero
-2026-05-20 14:24:15.117 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2026-05-20 14:24:15.121 [Thread-1] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2026-05-20 14:24:15.122 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-2026-05-20 14:24:15.126 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
-2026-05-20 14:24:15.127 [Thread-1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2026-05-20 14:24:15.230 [restartedMain] INFO  o.example.iocexam.IocExamApplication - Starting IocExamApplication using Java 21.0.10 with PID 1684 (F:\14_java_study\saja_git\juns\iocExam\out\production\classes started by wnstj in F:\14_java_study\saja_git\juns\iocExam)
-2026-05-20 14:24:15.231 [restartedMain] INFO  o.example.iocexam.IocExamApplication - No active profile set, falling back to 1 default profile: "default"
-2026-05-20 14:24:15.394 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-05-20 14:24:15.395 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-20 14:24:15.395 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-20 14:24:15.395 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-05-20 14:24:15.410 [restartedMain] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 177 ms
-2026-05-20 14:24:15.420 [restartedMain] INFO  o.e.i.cookOrder.service.OrderService - 주문이 접수되었습니다.
-2026-05-20 14:24:15.489 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-20 14:24:15.492 [restartedMain] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-05-20 14:24:15.494 [restartedMain] INFO  o.example.iocexam.IocExamApplication - Started IocExamApplication in 0.307 seconds (process running for 29.491)
-2026-05-20 14:24:15.495 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2026-05-20 14:24:15.495 [restartedMain] ERROR o.e.iocexam.logger.CalculatorService - Cannot divide by zero
-2026-05-20 15:31:24.118 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2026-05-20 15:31:24.122 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-04 10:13:10.092 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - Starting AopApplication using Java 21.0.10 with PID 15024 (F:\14_java_study\saja_git\juns\iocExam\out\production\classes started by wnstj in F:\14_java_study\saja_git\juns\iocExam)
+2026-06-04 10:13:10.093 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 10:13:10.129 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-04 10:13:10.129 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-04 10:13:11.003 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-04 10:13:11.014 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:13:11.015 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-04 10:13:11.015 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-06-04 10:13:11.051 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-04 10:13:11.052 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 922 ms
+2026-06-04 10:13:11.549 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-04 10:13:11.563 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:13:11.583 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-04 10:13:11.590 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - Started AopApplication in 2.061 seconds (process running for 2.778)
+2026-06-04 10:13:11.593 [restartedMain] INFO  o.e.iocexam.afteraop.LoggerAspect - Logging started
+2026-06-04 10:13:11.593 [restartedMain] INFO  o.e.iocexam.afteraop.LoggerAspect - Logging ok
+2026-06-04 10:13:11.594 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - logging service??
+2026-06-04 10:13:11.594 [restartedMain] INFO  o.e.iocexam.afteraop.AopService - testService
+2026-06-04 10:13:11.594 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - before service methodsimpleMethod
+2026-06-04 10:13:11.595 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - logging service??
+2026-06-04 10:13:11.596 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - after service method simpleMethod
+2026-06-04 10:13:11.596 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - result jun
+2026-06-04 10:13:49.708 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-04 10:13:49.711 [Thread-6] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-04 10:13:49.711 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:13:49.717 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-04 10:13:49.717 [Thread-6] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:13:49.821 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - Starting AopApplication using Java 21.0.10 with PID 15024 (F:\14_java_study\saja_git\juns\iocExam\out\production\classes started by wnstj in F:\14_java_study\saja_git\juns\iocExam)
+2026-06-04 10:13:49.821 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 10:13:50.035 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-04 10:13:50.035 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:13:50.035 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-04 10:13:50.035 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-06-04 10:13:50.051 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-04 10:13:50.051 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 228 ms
+2026-06-04 10:13:50.307 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-04 10:13:50.313 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:13:50.316 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-04 10:13:50.319 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - Started AopApplication in 0.534 seconds (process running for 41.508)
+2026-06-04 10:13:50.320 [restartedMain] INFO  o.e.iocexam.afteraop.LoggerAspect - Logging started
+2026-06-04 10:13:50.320 [restartedMain] INFO  o.e.iocexam.afteraop.LoggerAspect - Logging ok
+2026-06-04 10:13:50.320 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - logging service??
+2026-06-04 10:13:50.320 [restartedMain] INFO  o.e.iocexam.afteraop.AopService - testService
+2026-06-04 10:13:50.320 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - before service method simpleMethod
+2026-06-04 10:13:50.321 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - logging service??
+2026-06-04 10:13:50.321 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - after service method simpleMethod
+2026-06-04 10:13:50.321 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - result jun
+2026-06-04 10:13:50.322 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-06-04 10:15:05.649 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-04 10:15:05.650 [Thread-8] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-04 10:15:05.651 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:15:05.655 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-04 10:15:05.655 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:15:05.718 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - Starting AopApplication using Java 21.0.10 with PID 15024 (F:\14_java_study\saja_git\juns\iocExam\out\production\classes started by wnstj in F:\14_java_study\saja_git\juns\iocExam)
+2026-06-04 10:15:05.718 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 10:15:05.915 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-04 10:15:05.915 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:15:05.915 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-04 10:15:05.915 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-06-04 10:15:05.929 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-04 10:15:05.929 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 209 ms
+2026-06-04 10:15:06.185 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-04 10:15:06.191 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:15:06.195 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-04 10:15:06.198 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - Started AopApplication in 0.509 seconds (process running for 117.385)
+2026-06-04 10:15:06.198 [restartedMain] INFO  o.e.iocexam.afteraop.LoggerAspect - Logging started
+2026-06-04 10:15:06.198 [restartedMain] INFO  o.e.iocexam.afteraop.LoggerAspect - Logging ok
+2026-06-04 10:15:06.198 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - logging service??
+2026-06-04 10:15:06.198 [restartedMain] INFO  o.e.iocexam.afteraop.AopService - testService
+2026-06-04 10:15:06.198 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - before service method simpleMethod
+2026-06-04 10:15:06.198 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - logging service??
+2026-06-04 10:15:06.198 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - after service method simpleMethod
+2026-06-04 10:15:06.198 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - result jun
+2026-06-04 10:15:06.199 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-06-04 10:32:37.692 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (2 additions, 0 deletions, 1 modification)
+2026-06-04 10:32:37.693 [Thread-13] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-04 10:32:37.693 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:32:37.698 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-04 10:32:37.698 [Thread-13] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:32:37.780 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - Starting AopApplication using Java 21.0.10 with PID 15024 (F:\14_java_study\saja_git\juns\iocExam\out\production\classes started by wnstj in F:\14_java_study\saja_git\juns\iocExam)
+2026-06-04 10:32:37.780 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 10:32:37.995 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-04 10:32:37.996 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:32:37.996 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-04 10:32:37.996 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-06-04 10:32:38.009 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-04 10:32:38.010 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 227 ms
+2026-06-04 10:32:38.269 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-04 10:32:38.277 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:32:38.280 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-04 10:32:38.282 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - Started AopApplication in 0.541 seconds (process running for 1169.47)
+2026-06-04 10:32:38.283 [restartedMain] INFO  o.e.iocexam.afteraop.LoggerAspect - Logging started
+2026-06-04 10:32:38.283 [restartedMain] INFO  o.e.iocexam.afteraop.LoggerAspect - Logging ok
+2026-06-04 10:32:38.283 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - logging service??
+2026-06-04 10:32:38.283 [restartedMain] INFO  o.e.iocexam.afteraop.AopService - testService
+2026-06-04 10:32:38.284 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - before service method simpleMethod
+2026-06-04 10:32:38.284 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - logging service??
+2026-06-04 10:32:38.284 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - after service method simpleMethod
+2026-06-04 10:32:38.284 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - result jun
+2026-06-04 10:32:38.285 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-06-04 10:33:00.836 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-04 10:33:00.841 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-04 10:33:03.466 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - Starting AopApplication using Java 21.0.10 with PID 17808 (F:\14_java_study\saja_git\juns\iocExam\out\production\classes started by wnstj in F:\14_java_study\saja_git\juns\iocExam)
+2026-06-04 10:33:03.467 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 10:33:03.501 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-04 10:33:03.501 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-04 10:33:04.298 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-04 10:33:04.310 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:33:04.312 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-04 10:33:04.312 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-06-04 10:33:04.347 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-04 10:33:04.348 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 847 ms
+2026-06-04 10:33:04.824 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-04 10:33:04.835 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:33:04.856 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-04 10:33:04.862 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - Started AopApplication in 1.888 seconds (process running for 2.405)
+2026-06-04 10:33:04.867 [restartedMain] INFO  o.e.iocexam.afteraop.LoggerAspect - Logging started
+2026-06-04 10:33:04.867 [restartedMain] INFO  o.e.iocexam.afteraop.LoggerAspect - Logging ok
+2026-06-04 10:33:04.867 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - logging service??
+2026-06-04 10:33:04.867 [restartedMain] INFO  o.e.iocexam.afteraop.AopService - testService
+2026-06-04 10:33:04.868 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - before service method simpleMethod
+2026-06-04 10:33:04.868 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - logging service??
+2026-06-04 10:33:04.869 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - after service method simpleMethod
+2026-06-04 10:33:04.869 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - result jun
+2026-06-04 10:35:04.934 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-04 10:35:04.939 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-04 10:35:07.740 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - Starting AopApplication using Java 21.0.10 with PID 12604 (F:\14_java_study\saja_git\juns\iocExam\out\production\classes started by wnstj in F:\14_java_study\saja_git\juns\iocExam)
+2026-06-04 10:35:07.742 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 10:35:07.776 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-04 10:35:07.777 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-04 10:35:08.584 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-04 10:35:08.593 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:35:08.594 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-04 10:35:08.594 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-06-04 10:35:08.624 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-04 10:35:08.624 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 847 ms
+2026-06-04 10:35:09.080 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-04 10:35:09.091 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:35:09.110 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-04 10:35:09.116 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - Started AopApplication in 1.833 seconds (process running for 2.357)
+2026-06-04 10:35:09.119 [restartedMain] INFO  o.e.iocexam.afteraop.LoggerAspect - Logging started
+2026-06-04 10:35:09.119 [restartedMain] INFO  o.e.iocexam.afteraop.LoggerAspect - Logging ok
+2026-06-04 10:35:09.119 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - logging service??
+2026-06-04 10:35:09.119 [restartedMain] INFO  o.e.iocexam.afteraop.AopService - testService
+2026-06-04 10:35:09.121 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - before service method simpleMethod
+2026-06-04 10:35:09.121 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - logging service??
+2026-06-04 10:35:09.122 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - after service method simpleMethod
+2026-06-04 10:35:09.122 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - result jun
+2026-06-04 10:35:40.383 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-04 10:35:40.388 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-04 10:35:42.385 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - Starting AopApplication using Java 21.0.10 with PID 28396 (F:\14_java_study\saja_git\juns\iocExam\out\production\classes started by wnstj in F:\14_java_study\saja_git\juns\iocExam)
+2026-06-04 10:35:42.386 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 10:35:42.423 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-04 10:35:42.424 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-04 10:35:43.318 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-04 10:35:43.329 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:35:43.331 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-04 10:35:43.331 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-06-04 10:35:43.365 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-04 10:35:43.365 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 941 ms
+2026-06-04 10:35:43.867 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-04 10:35:43.879 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:35:43.899 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-04 10:35:43.906 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - Started AopApplication in 2.085 seconds (process running for 2.693)
+2026-06-04 10:35:43.910 [restartedMain] INFO  o.e.iocexam.afteraop.LoggerAspect - Logging started
+2026-06-04 10:35:43.911 [restartedMain] INFO  o.e.iocexam.afteraop.LoggerAspect - Logging ok
+2026-06-04 10:35:43.911 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - logging service??
+2026-06-04 10:35:43.911 [restartedMain] INFO  o.e.iocexam.afteraop.AopService - testService
+2026-06-04 10:35:43.912 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - before service method simpleMethod
+2026-06-04 10:35:43.913 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - logging service??
+2026-06-04 10:35:43.913 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - after service method simpleMethod
+2026-06-04 10:35:43.913 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - result jun
+2026-06-04 10:36:02.848 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-04 10:36:02.853 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-04 10:36:05.409 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - Starting AopApplication using Java 21.0.10 with PID 29300 (F:\14_java_study\saja_git\juns\iocExam\out\production\classes started by wnstj in F:\14_java_study\saja_git\juns\iocExam)
+2026-06-04 10:36:05.411 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 10:36:05.446 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-04 10:36:05.446 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-04 10:36:06.251 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-04 10:36:06.260 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:36:06.261 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-04 10:36:06.262 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-06-04 10:36:06.294 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-04 10:36:06.294 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 847 ms
+2026-06-04 10:36:06.800 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-04 10:36:06.812 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:36:06.826 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-04 10:36:06.832 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - Started AopApplication in 1.905 seconds (process running for 2.394)
+2026-06-04 10:36:06.835 [restartedMain] INFO  o.e.iocexam.afteraop.LoggerAspect - Logging started
+2026-06-04 10:36:06.835 [restartedMain] INFO  o.e.iocexam.afteraop.LoggerAspect - Logging ok
+2026-06-04 10:36:06.835 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - logging service??
+2026-06-04 10:36:06.836 [restartedMain] INFO  o.e.iocexam.afteraop.AopService - testService
+2026-06-04 10:36:06.838 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - before service method simpleMethod
+2026-06-04 10:36:06.839 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - logging service??
+2026-06-04 10:36:06.840 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - after service method simpleMethod
+2026-06-04 10:36:06.840 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - result jun
+2026-06-04 10:37:12.853 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-04 10:37:12.859 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-04 10:37:15.490 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - Starting AopApplication using Java 21.0.10 with PID 22660 (F:\14_java_study\saja_git\juns\iocExam\out\production\classes started by wnstj in F:\14_java_study\saja_git\juns\iocExam)
+2026-06-04 10:37:15.491 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 10:37:15.528 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-04 10:37:15.528 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-04 10:37:16.331 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-04 10:37:16.340 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:37:16.341 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-04 10:37:16.341 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-06-04 10:37:16.371 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-04 10:37:16.372 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 843 ms
+2026-06-04 10:37:16.859 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-04 10:37:16.871 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:37:16.885 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-04 10:37:16.891 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - Started AopApplication in 1.864 seconds (process running for 2.376)
+2026-06-04 10:37:16.893 [restartedMain] INFO  o.e.iocexam.afteraop.LoggerAspect - Logging started
+2026-06-04 10:37:16.894 [restartedMain] INFO  o.e.iocexam.afteraop.LoggerAspect - Logging ok
+2026-06-04 10:37:16.894 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - logging service??
+2026-06-04 10:37:16.894 [restartedMain] INFO  o.e.iocexam.afteraop.AopService - testService
+2026-06-04 10:37:16.898 [restartedMain] INFO  o.e.i.afteraop.PerformanceAspect - start execution timesimpleMethod
+2026-06-04 10:37:16.899 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - before service method simpleMethod
+2026-06-04 10:37:16.899 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - logging service??
+2026-06-04 10:37:16.899 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - after service method simpleMethod
+2026-06-04 10:37:16.899 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - result jun
+2026-06-04 10:37:16.899 [restartedMain] INFO  o.e.i.afteraop.PerformanceAspect - [Performance] SimpleService.simpleMethod() executed in 3%n
+2026-06-04 10:37:45.571 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-04 10:37:45.576 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-04 10:37:48.077 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - Starting AopApplication using Java 21.0.10 with PID 28824 (F:\14_java_study\saja_git\juns\iocExam\out\production\classes started by wnstj in F:\14_java_study\saja_git\juns\iocExam)
+2026-06-04 10:37:48.079 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 10:37:48.114 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-04 10:37:48.114 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-04 10:37:48.911 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-04 10:37:48.919 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:37:48.920 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-04 10:37:48.921 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-06-04 10:37:48.951 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-04 10:37:48.952 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 837 ms
+2026-06-04 10:37:49.433 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-04 10:37:49.444 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:37:49.458 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-04 10:37:49.464 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - Started AopApplication in 1.838 seconds (process running for 2.315)
+2026-06-04 10:37:49.466 [restartedMain] INFO  o.e.iocexam.afteraop.LoggerAspect - Logging started
+2026-06-04 10:37:49.466 [restartedMain] INFO  o.e.iocexam.afteraop.LoggerAspect - Logging ok
+2026-06-04 10:37:49.468 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - logging service??
+2026-06-04 10:37:49.468 [restartedMain] INFO  o.e.iocexam.afteraop.AopService - testService
+2026-06-04 10:37:49.471 [restartedMain] INFO  o.e.i.afteraop.PerformanceAspect - start execution time1780537069471
+2026-06-04 10:37:49.472 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - before service method simpleMethod
+2026-06-04 10:37:49.472 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - logging service??
+2026-06-04 10:37:49.472 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - after service method simpleMethod
+2026-06-04 10:37:49.472 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - result jun
+2026-06-04 10:37:49.472 [restartedMain] INFO  o.e.i.afteraop.PerformanceAspect - [Performance] SimpleService.simpleMethod() executed in 1%n
+2026-06-04 10:39:10.859 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-04 10:39:10.861 [Thread-6] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-04 10:39:10.862 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:39:10.866 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-04 10:39:10.866 [Thread-6] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:39:10.964 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - Starting AopApplication using Java 21.0.10 with PID 28824 (F:\14_java_study\saja_git\juns\iocExam\out\production\classes started by wnstj in F:\14_java_study\saja_git\juns\iocExam)
+2026-06-04 10:39:10.964 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 10:39:11.161 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-06-04 10:39:11.161 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:39:11.161 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-04 10:39:11.162 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-06-04 10:39:11.175 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-04 10:39:11.175 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 209 ms
+2026-06-04 10:39:11.434 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-06-04 10:39:11.440 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-04 10:39:11.443 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-06-04 10:39:11.444 [restartedMain] INFO  o.e.iocexam.afteraop.AopApplication - Started AopApplication in 0.51 seconds (process running for 84.296)
+2026-06-04 10:39:11.445 [restartedMain] INFO  o.e.iocexam.afteraop.LoggerAspect - Logging started
+2026-06-04 10:39:11.445 [restartedMain] INFO  o.e.iocexam.afteraop.LoggerAspect - Logging ok
+2026-06-04 10:39:11.445 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - logging service??
+2026-06-04 10:39:11.445 [restartedMain] INFO  o.e.iocexam.afteraop.AopService - testService
+2026-06-04 10:39:11.445 [restartedMain] INFO  o.e.i.afteraop.PerformanceAspect - start execution time1780537151445
+2026-06-04 10:39:11.446 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - before service method simpleMethod
+2026-06-04 10:39:11.446 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - logging service??
+2026-06-04 10:39:11.446 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - after service method simpleMethod
+2026-06-04 10:39:11.446 [restartedMain] INFO  o.e.i.afteraop.TransectionAspect - result jun
+2026-06-04 10:39:11.446 [restartedMain] INFO  o.e.i.afteraop.PerformanceAspect - [Performance] SimpleService.simpleMethod() executed in 1
+2026-06-04 10:39:11.446 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-06-04 11:34:32.744 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-04 11:34:32.752 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant</title>
+</head>
+<body>
+
+
+<h1 th:text="${restaurant.name}"></h1>
+
+<p th:text="${restaurant.address}"></p>
+<p th:text="${restaurant.category}"></p>
+<p th:text="${restaurant.phoneNumber}"></p>
+<p th:text="${restaurant.description}"></p>
+<p th:text="${restaurant.openingTime}"></p>
+<p th:text="${restaurant.closingTime}"></p>
+
+<a th:href="@{/}">홈으로</a>
+
+
+
+<div th:if="${session.loginUser != null
+             and session.loginUser.role.name() == 'ADMIN'}">
+    <form th:action="@{/admin/restaurants/update/{id}(id=${restaurant.id})}"
+          method="get">
+        <button type="submit">수정하기</button>
+    </form>
+
+    <form th:action="@{/admin/restaurants/disable/{id}(id=${restaurant.id})}"
+          method="post">
+        <button type="submit">비활성화</button>
+    </form>
+
+    <form th:action="@{/admin/restaurants/delete/{id}(id=${restaurant.id})}"
+          method="post">
+        <button type="submit">삭제</button>
+    </form>
+</div>
+
+
+
+</body>
+</html>

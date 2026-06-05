@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>식당 목록</title>
+</head>
+<body>
+
+<form th:action="@{/restaurants/all}" method="get">
+    <input type="text" name="keyword" th:value="${keyword}" placeholder="식당 이름 또는 주소 검색">
+    <button type="submit">검색</button>
+</form>
+
+<ul th:each="restaurant : ${restaurants}">
+    <li>Name: <span th:text="${restaurant.name}"></span></li>
+    <li>Address: <span th:text="${restaurant.address}"></span></li>
+    <li>Phone: <span th:text="${restaurant.phoneNumber}"></span></li>
+    <li>Description: <span th:text="${restaurant.description}"></span></li>
+    <li>Category: <span th:text="${restaurant.category}"></span></li>
+
+    <li th:if="${session.loginUser != null
+             and session.loginUser.role.name() == 'ADMIN'}">Activate: <span th:text="${restaurant.active}"></span></li>
+
+    <li>
+        <a th:href="@{/reservation/reserve/{restaurantId}(restaurantId=${restaurant.id})}">
+            예약하기
+        </a>
+
+        <a th:href="@{/restaurants/{id}(id=${restaurant.id})}">
+            상세보기
+        </a>
+
+    </li>
+</ul>
+
+<nav>
+    <ul class="pagination">
+        <li th:classappend="${!page.hasPrevious} ? 'disabled'">
+            <a th:href="@{/restaurants/all(page=${page.number - 1}, keyword=${keyword})}">이전</a>
+        </li>
+        <li th:each="pageNumber : ${#numbers.sequence(0, page.totalPages - 1)}"
+            th:classappend="${pageNumber == page.number} ? 'active'">
+            <a th:href="@{/restaurants/all(page=${pageNumber}, keyword=${keyword})}" th:text="${pageNumber + 1}"></a>
+         </li>
+         <li th:classappend="${!page.hasNext} ? 'disabled'">
+             <a th:href="@{/restaurants/all(page=${page.number + 1}, keyword=${keyword})}">다음</a>
+         </li>
+     </ul>
+ </nav>
+
+<a th:href="@{/}">홈으로</a>
+
+</body>
+</html>

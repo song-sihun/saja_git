@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <h1>All reservations</h1>
+</div>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>예약 날짜</th>
+        <th>인원</th>
+        <th>상태</th>
+        <th>요청사항</th>
+        <th>취소</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr th:if="${#lists.isEmpty(reservations)}">
+        <td colspan="8">예약 내역이 없습니다.</td>
+    </tr>
+
+    <tr th:each="reservation : ${reservations}">
+        <td th:text="${reservation.reservationDate}">2026-06-01</td>
+        <td th:text="${reservation.partySize}">2</td>
+        <td th:text="${reservation.status}">RESERVED</td>
+        <td th:text="${reservation.requestMessage}">요청사항</td>
+        <td>
+            <form th:if="${reservation.status.name() == 'RESERVED'}"
+                  th:action="@{/reservation/cancel/{reservationId}(reservationId=${reservation.id})}"
+                  method="post">
+                <button type="submit">취소</button>
+            </form>
+            <span th:if="${reservation.status.name() == 'CANCELLED'}">
+            취소됨
+        </span>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

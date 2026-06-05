@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>상품등록</title>
+</head>
+<body>
+<form th:action="@{/admin/restaurants/register}"
+      th:object="${restaurantCreateRequest}"
+      method="post"
+      class="restaurant-form">
+
+    <div class="form-group">
+        <label for="name">식당명</label>
+        <input id="name"
+               type="text"
+               th:field="*{name}"
+               >
+        <p class="error"
+           th:if="${#fields.hasErrors('name')}"
+           th:errors="*{name}">
+            식당명 오류
+        </p>
+    </div>
+
+    <div class="form-group">
+        <label for="category">식당 카테고리</label>
+        <select id="category" name="category" required>
+            <option value="">카테고리를 선택하세요</option>
+            <option th:each="category : ${categories}"
+                    th:value="${category}"
+                    th:text="${category.label}">
+                한식
+            </option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="address">주소</label>
+        <input id="address"
+               type="text"
+               th:field="*{address}"
+               >
+        <p class="error"
+           th:if="${#fields.hasErrors('address')}"
+           th:errors="*{address}">
+            주소 오류
+        </p>
+    </div>
+
+    <div class="form-group">
+        <label for="phoneNumber">전화번호</label>
+        <input id="phoneNumber"
+               type="text"
+               th:field="*{phoneNumber}"
+               >
+        <p class="error"
+           th:if="${#fields.hasErrors('phoneNumber')}"
+           th:errors="*{phoneNumber}">
+            전화번호 오류
+        </p>
+    </div>
+
+    <div class="time-row">
+        <div class="form-group">
+            <label for="openingTime">오픈 시간</label>
+            <input id="openingTime"
+                   type="time"
+                   th:field="*{openingTime}">
+            <p class="error"
+               th:if="${#fields.hasErrors('openingTime')}"
+               th:errors="*{openingTime}">
+                오픈 시간 오류
+            </p>
+        </div>
+
+        <div class="form-group">
+            <label for="closingTime">마감 시간</label>
+            <input id="closingTime"
+                   type="time"
+                   th:field="*{closingTime}">
+            <p class="error"
+               th:if="${#fields.hasErrors('closingTime')}"
+               th:errors="*{closingTime}">
+                마감 시간 오류
+            </p>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="description">식당 소개</label>
+        <textarea id="description"
+                  th:field="*{description}"
+                  ></textarea>
+        <p class="error"
+           th:if="${#fields.hasErrors('description')}"
+           th:errors="*{description}">
+            소개 오류
+        </p>
+    </div>
+
+    <div class="button-row">
+        <a th:href="@{/}" class="btn btn-cancel">취소</a>
+        <button type="submit" class="btn btn-submit">식당 등록</button>
+    </div>
+</form>
+</body>
+</html>
