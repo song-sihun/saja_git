@@ -11,6 +11,10 @@
         <class>org.example.jpa.entity.Student</class>
         <class>org.example.jpa.entity.Book</class>
         <class>org.example.jpa.entity.Author</class>
+        <class>org.example.jpa.entity.Project</class>
+        <class>org.example.jpa.entity.Employee</class>
+        <class>org.example.jpa.entity.Person</class>
+        <class>org.example.jpa.entity.Passport</class>
 
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
