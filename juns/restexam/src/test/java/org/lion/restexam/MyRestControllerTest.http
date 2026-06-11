@@ -1,0 +1,82 @@
+POST http://localhost:8080/users
+
+Content-Type: application/json
+
+{
+    "name":"jun"
+}
+
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "name": "홍길동",
+  "email": "hong@example.com"
+}
+
+### 삼품전체 리스트 조회
+GET http://localhost:8080/products
+
+### 상품등록
+POST http://localhost:8080/product/add
+Content-Type: application/json
+
+{
+  "productName": "product3",
+  "price": 3000
+}
+
+### 상품수정
+
+### 상품삭제
+
+
+### 메모등록
+POST http://localhost:8080/api/memos/add
+Content-Type: application/json
+
+{
+  "description": "product3"
+}
+
+### 메모조회
+GET http://localhost:8080/api/memos
+
+### 메모단건조회
+GET http://localhost:8080/api/memos/1
+
+### 메모삭제
+DELETE http://localhost:8080/api/memos/delete/2
+
+### 메모수정
+PUT http://localhost:8080/api/memos/1
+Content-Type: application/json
+
+{
+  "description": "product3333"
+}
+
+###
+POST http://localhost:8080/api/products/create
+Content-Type: application/json
+
+{
+  "productName": "마우스",
+  "price": 5000
+}
+
+###
+GET http://localhost:8080/api/products
+
+###
+PUT http://localhost:8080/api/products/2
+Content-Type: application/json
+
+{
+  "productName" : "키보드",
+  "price": 8000
+}
+
+###
+DELETE http://localhost:8080/api/products/delete/1
