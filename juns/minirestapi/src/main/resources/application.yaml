@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: minirestapi
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: juns
+    password: juns1234
+    url: jdbc:mysql://localhost:3306/restmini
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+
+server:
+  tomcat:
+    threads:
+      max: 200
+      min-spare: 5
+#  port: 8040
+
+logging:
+  level:
+    org:
+      springframework:
+        security: trace
+
+
+jwt:
+  secretKey: aPQbsKV7CZZDls/cnhW1EjqlGux45LAbBYpBhyk7nAk=
+  refreshKey: 12346551456456446545644tyu23123156e1rt12r12
+  access-expiration-ms: 10000
+  refresh-expiration-ms: 604800000

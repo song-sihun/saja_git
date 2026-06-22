@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: stockRestApi
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: juns
+    password: juns1234
+    url: jdbc:mysql://localhost:3306/stockrest

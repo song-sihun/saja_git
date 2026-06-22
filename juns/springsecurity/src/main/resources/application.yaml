@@ -15,6 +15,7 @@ spring:
       hibernate:
         format_sql: true
 
+
 #  security:
 #    user:
 #      name: juns
@@ -26,9 +27,14 @@ server:
       max: 200
       min-spare: 5
 
-
 logging:
   level:
     org:
       springframework:
         security: trace
+
+jwt:
+  secretKey: aPQbsKV7CZZDls/cnhW1EjqlGux45LAbBYpBhyk7nAk=
+  refreshKey: 12346551456456446545644tyu23123156e1rt12r12
+  access-expiration-ms: 1800000
+  refresh-expiration-ms: 604800000

@@ -3,6 +3,7 @@ package org.lion.springsecurity.securityexam4.controller;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.lion.springsecurity.securityexam4.domain.User;
+import org.lion.springsecurity.securityexam4.dto.UserRegisterDTO;
 import org.lion.springsecurity.securityexam4.service.UserService;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -10,10 +11,12 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.naming.Binding;
 import java.util.Collections;
 
 @Controller
@@ -30,12 +33,6 @@ public class UserController {
             model.addAttribute("authorities", user.getAuthorities());
             model.addAttribute("isLogin", true);
         }
-        else {
-            model.addAttribute("username", "GUEST");
-            model.addAttribute("user", null);
-            model.addAttribute("authorities", Collections.emptyList());
-            model.addAttribute("isLogin", false);
-        }
         return "home";
     }
 
@@ -46,21 +43,21 @@ public class UserController {
 
     @PostMapping("/signup")
     public String signup(
-            @RequestParam String username,
-            @RequestParam String password,
-            @RequestParam String name,
-            @RequestParam String email
+            UserRegisterDTO user,
+            BindingResult bindingResult,
+            Model model
     ) {
-        User user = new User();
-        user.setUsername(username);
-        user.setPassword(password);
-        user.setName(name);
-        user.setEmail(email);
+        if (bindingResult.hasErrors()) {
+            return "signup";
+        }
+        try{
+            User createdUser = userService.createUser(user);
 
-        User createdUser = userService.createUser(user);
+        } catch (IllegalArgumentException e) {
+            model.addAttribute("error", e.getMessage());
+            return "signup";
+        }
 
         return "redirect:/";
     }
-
-
 }
