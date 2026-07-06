@@ -1,0 +1,44 @@
+### 1. 회원 가입
+POST http://localhost:8080/api/users/register
+Content-Type: application/json
+
+{
+  "username": "jun",
+  "password": "password123",
+  "email": "jun@example.com"
+}
+
+### 2. login
+POST http://localhost:8080/api/users/login
+Content-Type: application/json
+
+{
+  "username": "jun",
+  "password": "password123"
+}
+
+> {%
+    client.global.set("accessToken", response.body.accessToken);
+    client.global.set("refreshToken", response.body.refreshToken);
+%}
+
+
+
+### 3. Todo 생성
+POST http://localhost:8080/api/todos/add
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{
+  "title": "test todo",
+  "description": "do test todo"
+}
+
+### 4. Todo 조회
+GET http://localhost:8080/api/todos
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+
+### 4. Todo 조회
+GET http://localhost:8080/v3/api-docs

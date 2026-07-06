@@ -15,10 +15,19 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.web.bind.annotation.*;
-
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 @RestController
 @RequestMapping("/posts")
@@ -30,44 +39,47 @@ public class PostController {
     @GetMapping("/{postId}/comments")
     public ResponseEntity<Page<CommentResponseDTO>> getCommentById(
             @PathVariable Long postId,
-            @PageableDefault(
-                    size = 10,
-                    sort = "createdAt",
-                    direction = Sort.Direction.ASC
-            )
-            Pageable pageable
+            @PageableDefault(size = 10, sort = "createdAt", direction = Sort.Direction.ASC) Pageable pageable
     ) {
-        Page<CommentResponseDTO> commentResponseDTOPage = commentService.findAllByPost(pageable, postId);
-        return ResponseEntity.ok(commentResponseDTOPage);
+        return ResponseEntity.ok(commentService.findAllByPost(pageable, postId));
     }
 
     @GetMapping
     public ResponseEntity<Page<PostListResponseDTO>> getBoard(
-            @PageableDefault(
-                    size = 10,
-                    sort = "createdAt",
-                    direction = Sort.Direction.DESC
-            ) Pageable pageable
+            @PageableDefault(size = 10, sort = "createdAt", direction = Sort.Direction.DESC) Pageable pageable
     ) {
-        Page<PostListResponseDTO> boardResponseDTOS = postService.findAll(pageable);
-        return ResponseEntity.ok(boardResponseDTOS);
+        return ResponseEntity.ok(postService.findAll(pageable));
     }
 
     @GetMapping("/{postId}")
     public ResponseEntity<PostDetailResponseDTO> getBoard(@PathVariable Long postId) {
-        return ResponseEntity.ok().body(postService.findPostById(postId));
+        return ResponseEntity.ok(postService.findPostById(postId));
     }
 
     @PostMapping
-    public ResponseEntity<PostDetailResponseDTO> createBoard(@Valid @RequestBody PostCreateDTO postCreateDTO, @AuthenticationPrincipal User loginUser) {
-        PostDetailResponseDTO postDetailResponseDTO = postService.createPost(postCreateDTO, loginUser);
-        return ResponseEntity.status(HttpStatus.CREATED).body(postDetailResponseDTO);
+    public ResponseEntity<PostDetailResponseDTO> createBoard(
+            @Valid @RequestBody PostCreateDTO postCreateDTO,
+            @AuthenticationPrincipal User loginUser
+    ) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(postService.createPost(postCreateDTO, loginUser));
+    }
+
+    @PostMapping(value = "/{postId}/image", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public ResponseEntity<PostDetailResponseDTO> uploadImage(
+            @PathVariable Long postId,
+            @RequestParam("image") MultipartFile image,
+            @AuthenticationPrincipal User loginUser
+    ) {
+        return ResponseEntity.ok(postService.uploadImage(postId, image, loginUser));
     }
 
     @PutMapping("/{postId}")
-    public ResponseEntity<PostDetailResponseDTO> updateBoard(@PathVariable Long postId, @Valid @RequestBody PostUpdateDTO postUpdateDTO, @AuthenticationPrincipal User loginUser) {
-        PostDetailResponseDTO postDetailResponseDTO = postService.updatePostById(postId, postUpdateDTO, loginUser);
-        return ResponseEntity.ok(postDetailResponseDTO);
+    public ResponseEntity<PostDetailResponseDTO> updateBoard(
+            @PathVariable Long postId,
+            @Valid @RequestBody PostUpdateDTO postUpdateDTO,
+            @AuthenticationPrincipal User loginUser
+    ) {
+        return ResponseEntity.ok(postService.updatePostById(postId, postUpdateDTO, loginUser));
     }
 
     @DeleteMapping("/{postId}")
@@ -75,7 +87,4 @@ public class PostController {
         postService.deactivatePostById(postId, loginUser);
         return ResponseEntity.noContent().build();
     }
-
-
-
 }

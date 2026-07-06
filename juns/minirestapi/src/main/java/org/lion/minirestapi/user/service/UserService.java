@@ -20,6 +20,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashSet;
+import java.util.Optional;
 import java.util.Set;
 
 @Service
@@ -62,6 +63,10 @@ public class UserService {
         return UserResponseDTO.fromEntity(user);
     }
 
+    public User findUserById(Long id){
+        return userRepository.findById(id).orElseThrow(() -> new UserNotFoundException(ErrorString.USER_NOT_FOUND.getMessage()));
+    }
+
     public Page<UserResponseDTO> findAll(User loginUser, Pageable pageable) {
         if(loginUser.getRoles().stream().noneMatch(role -> role.getName().equals("ADMIN"))) {
             throw new AccessDeniedException(ErrorString.ACCESS_DENIED.getMessage());
@@ -88,6 +93,12 @@ public class UserService {
             throw new AccessDeniedException(ErrorString.ACCESS_DENIED.getMessage());
         }
         userRepository.deleteById(id);
+    }
+
+
+    public UserResponseDTO findByProviderAndSocialId(String provider, String socialId) {
+        User user = userRepository.findByProviderAndSocialId(provider, socialId).orElseThrow(() -> new UserNotFoundException(ErrorString.USER_NOT_FOUND.getMessage()));
+        return UserResponseDTO.fromEntity(user);
     }
 
 }

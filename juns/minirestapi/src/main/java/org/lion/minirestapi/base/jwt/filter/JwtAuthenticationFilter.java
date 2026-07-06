@@ -40,9 +40,26 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     private final JwtTokenizer jwtTokenizer;
 
     @Override
+    protected boolean shouldNotFilter(HttpServletRequest request) {
+        String path = request.getServletPath();
+
+        return request.getMethod().equals("OPTIONS")
+                || path.startsWith("/oauth2/")
+                || path.startsWith("/login/oauth2/")
+                || path.equals("/auth/login")
+                || path.equals("/auth/refresh")
+                || path.equals("/users");
+    }
+
+    @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
 
         String token = getToken(request);
+        if (token == null) {
+            filterChain.doFilter(request, response);
+            return;
+        }
+
         if (StringUtils.hasText(token)) {
             try {
                 // 2. 토큰 검증 및 인증 객체 생성
@@ -77,14 +94,19 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         String email = claims.get("email", String.class);
         List<GrantedAuthority> authorities = getAuthorities(claims);
 
-        User user = new User(userId, username, name, "", email, authorities.
-                stream().map(
-                        GrantedAuthority::getAuthority
-                ).filter(Objects::nonNull)
-                .map(authority -> authority.replace("ROLE_", ""))
-                .map(Role::new)
-                .collect(Collectors.toSet())
-        );
+        User user = User.builder()
+                .id(userId)
+                .name(name)
+                .email(email)
+                .username(username)
+                .roles(authorities.
+                        stream().map(
+                                GrantedAuthority::getAuthority
+                        ).filter(Objects::nonNull)
+                        .map(authority -> authority.replace("ROLE_", ""))
+                        .map(Role::new)
+                        .collect(Collectors.toSet()))
+                .build();
 
         Authentication authentication = new UsernamePasswordAuthenticationToken(user, token, user.getAuthorities());
         SecurityContextHolder.getContext().setAuthentication(authentication);

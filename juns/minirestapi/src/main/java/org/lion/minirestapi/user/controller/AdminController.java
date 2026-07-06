@@ -11,7 +11,11 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/admin")
@@ -22,10 +26,7 @@ public class AdminController {
 
     @GetMapping("/users")
     public ResponseEntity<Page<UserResponseDTO>> getUsers(@AuthenticationPrincipal User loginUser, Pageable pageable) {
-
-        Page<UserResponseDTO> userResponseDTOPage = userService.findAll(loginUser, pageable);
-
-        return ResponseEntity.ok(userResponseDTOPage);
+        return ResponseEntity.ok(userService.findAll(loginUser, pageable));
     }
 
     @DeleteMapping("/users/{id}")
@@ -34,16 +35,17 @@ public class AdminController {
         return ResponseEntity.noContent().build();
     }
 
-
-    @DeleteMapping("/{postId}")
+    @DeleteMapping("/posts/{postId}")
     public ResponseEntity<Void> deleteBoardAdmin(@PathVariable Long postId, @AuthenticationPrincipal User loginUser) {
         postService.deletePostById(postId, loginUser);
         return ResponseEntity.noContent().build();
     }
 
     @GetMapping("/posts")
-    public ResponseEntity<Page<PostDetailResponseDTO>> getPosts(@AuthenticationPrincipal User loginUser, @PageableDefault(size = 10) Pageable pageable) {
-        Page<PostDetailResponseDTO> postResponseDTOPage = postService.findAllAdmin(loginUser, pageable);
-        return ResponseEntity.ok(postResponseDTOPage);
+    public ResponseEntity<Page<PostDetailResponseDTO>> getPosts(
+            @AuthenticationPrincipal User loginUser,
+            @PageableDefault(size = 10) Pageable pageable
+    ) {
+        return ResponseEntity.ok(postService.findAllAdmin(loginUser, pageable));
     }
 }

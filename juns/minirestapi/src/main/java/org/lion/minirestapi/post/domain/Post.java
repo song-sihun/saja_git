@@ -1,7 +1,21 @@
 package org.lion.minirestapi.post.domain;
 
-import jakarta.persistence.*;
-import lombok.*;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 import org.lion.minirestapi.base.domain.BaseTimeEntity;
 import org.lion.minirestapi.comment.domain.Comment;
 import org.lion.minirestapi.user.domain.User;
@@ -27,6 +41,12 @@ public class Post extends BaseTimeEntity {
     @Column(nullable = false)
     private String content;
 
+    @Column(length = 50)
+    private String category;
+
+    @Column(length = 500)
+    private String imageUrl;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
@@ -37,7 +57,7 @@ public class Post extends BaseTimeEntity {
 
     @Column(nullable = false)
     @Builder.Default
-    private boolean activate=true;
+    private boolean activate = true;
 
     public void addComment(Comment comment) {
         this.comments.add(comment);
@@ -51,8 +71,15 @@ public class Post extends BaseTimeEntity {
         this.content = description;
     }
 
-    public void deactivate() {
-        this.activate=false;
+    public void updateCategory(String category) {
+        this.category = category;
     }
 
+    public void updateImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    public void deactivate() {
+        this.activate = false;
+    }
 }

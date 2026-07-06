@@ -4,12 +4,11 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 import org.lion.minirestapi.base.domain.BaseTimeEntity;
+import org.lion.minirestapi.oauth.config.LoginType;
 import org.lion.minirestapi.user.dto.UserCreateDTO;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.Collection;
 import java.util.HashSet;
@@ -41,7 +40,6 @@ public class User extends BaseTimeEntity implements UserDetails {
     @Column(nullable = false, unique = true, length = 50)
     private String email;
 
-
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "user_roles",
@@ -52,6 +50,13 @@ public class User extends BaseTimeEntity implements UserDetails {
     @Builder.Default
     private Set<Role> roles = new HashSet<>();
 
+    private String provider;
+    private String socialId;
+    private String avatarUrl;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private LoginType loginType;
 
     public static User fromDTO(UserCreateDTO userCreateDTO, Set<Role> roles) {
         return User.builder()

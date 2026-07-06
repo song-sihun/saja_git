@@ -1,12 +1,13 @@
 package org.lion.minirestapi.post.dto;
 
-import lombok.*;
-import org.lion.minirestapi.comment.domain.Comment;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 import org.lion.minirestapi.post.domain.Post;
-import org.lion.minirestapi.comment.dto.CommentResponseDTO;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Getter
 @NoArgsConstructor
@@ -16,6 +17,8 @@ import java.util.List;
 public class PostListResponseDTO {
     private Long id;
     private String title;
+    private String category;
+    private String imageUrl;
     private String userName;
     private LocalDateTime createdAt;
 
@@ -23,6 +26,8 @@ public class PostListResponseDTO {
         return PostListResponseDTO.builder()
                 .id(post.getId())
                 .title(post.getTitle())
+                .category(post.getCategory())
+                .imageUrl(post.getImageUrl())
                 .userName(post.getUser().getUsername())
                 .createdAt(post.getCreatedAt())
                 .build();

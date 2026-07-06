@@ -1,9 +1,13 @@
 package org.lion.minirestapi.post.dto;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 import org.lion.minirestapi.comment.domain.Comment;
-import org.lion.minirestapi.post.domain.Post;
 import org.lion.minirestapi.comment.dto.CommentResponseDTO;
+import org.lion.minirestapi.post.domain.Post;
 
 import java.util.List;
 
@@ -17,6 +21,8 @@ public class PostDetailResponseDTO {
     private String title;
     private String userName;
     private String content;
+    private String category;
+    private String imageUrl;
     private List<CommentResponseDTO> comments;
 
     public static PostDetailResponseDTO fromEntity(Post post) {
@@ -25,7 +31,12 @@ public class PostDetailResponseDTO {
                 .title(post.getTitle())
                 .userName(post.getUser().getUsername())
                 .content(post.getContent())
-                .comments(post.getComments().stream().filter(Comment::isActivate).map(CommentResponseDTO::fromEntity).toList())
+                .category(post.getCategory())
+                .imageUrl(post.getImageUrl())
+                .comments(post.getComments().stream()
+                        .filter(Comment::isActivate)
+                        .map(CommentResponseDTO::fromEntity)
+                        .toList())
                 .build();
     }
 }

@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: todo
+
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: ${GITHUB_CLIENT_ID}
+            client-secret: ${GITHUB_CLIENT_SECRET}
+            scope:
+              - read:user
+              - user:email
+              -
+jwt:
+  secretKey: ${JWT_SECRET_KEY}
+  refreshKey: 12346551456456446545644tyu23123156e1rt12r12
+  access-expiration-ms: 3600000
+  refresh-expiration-ms: 604800000
